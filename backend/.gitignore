@@ -15,3 +15,8 @@ build/
 # Editor files
 .vscode/
 .idea/
+
+
+ExpenseTracker-clean.bfg-report/
+ExpenseTracker-clean/
+
