@@ -8,22 +8,8 @@ const UserProvider = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem("authToken");
     if (token) {
-      fetch("/api/v1/auth/me", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-        .then((res) => {
-          if (!res.ok) throw new Error("Failed to fetch user");
-          return res.json();
-        })
-        .then((data) => {
-          setUser(data.user);
-        })
-        .catch(() => {
-          localStorage.removeItem("authToken");
-          setUser(null);
-        });
+      // Simple placeholder user object; later replace with real fetch
+      setUser({ token });
     }
   }, []);
 
