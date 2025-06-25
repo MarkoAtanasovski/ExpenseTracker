@@ -36,8 +36,6 @@ const SideMenu = ({ activeMenu }) => {
             // Redirect to login
             navigate("/login", { replace: true });
             
-            // Optional: Force reload to ensure clean state
-            window.location.reload();
         }
     };
 
